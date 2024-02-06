@@ -1,0 +1,7 @@
+{
+  "name": "AQI-Guard",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
