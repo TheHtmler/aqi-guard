@@ -1,0 +1,48 @@
+.setting-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+
+.profile-container {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  border-radius: 0 0 20px 20px;
+  color: #fff;
+  background: var(--ion-color-primary);
+}
+
+.profile-container .avatar {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #fff;
+  transform: translate(-50%, -50%);
+}
+
+.profile-container .avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.profile-container .name {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.setting-list-container {
+  padding: 20px 0;
+  flex: 1;
+}
