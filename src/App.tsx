@@ -1,4 +1,4 @@
-import { Redirect, Route, useHistory, useLocation } from "react-router-dom";
+import { Redirect, Route } from "react-router-dom";
 import {
   IonApp,
   IonIcon,
@@ -39,7 +39,6 @@ import "./theme/variables.css";
 setupIonicReact();
 
 const App: React.FC = () => {
-  const history = useHistory();
   const [hasLogin, setHasLogin] = useState(!!localStorage.getItem("token"));
   console.log(hasLogin, "hasLogin");
 

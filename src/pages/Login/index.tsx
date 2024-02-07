@@ -11,7 +11,7 @@ import "./index.css";
 import { login } from "@/api/login";
 
 interface IProps {
-  onSuccess: () => void;
+  onSuccess?: () => void;
 }
 
 const Login = (props: IProps) => {
@@ -34,7 +34,7 @@ const Login = (props: IProps) => {
       if (loginRes?.token) {
         localStorage.setItem("token", loginRes.token);
         localStorage.setItem("userInfo", JSON.stringify(loginRes));
-        props.onSuccess();
+        props.onSuccess?.();
       }
     } catch (error) {
       present({
